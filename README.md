@@ -12,13 +12,13 @@ CoreData存储数据注意事项：
 2.对于支持NSKeyedArchiver转化并且实现了NSCoding协议的类型，如NSArray、NSDictionary等类型，就只需要将Type选择为transformer就行了。
 
 3.对于不能直接使用NSKeyedArchiver的类型，如UIImage，我们就需要自定义一个NSValuetransformer了，不然虽然不会报错，可取值是nil。以下是存储图片的步骤。
-![image](https://github.com/Chaya123/CompleteCoreDataDemo/blob/master/CompleteCoreDataDemo/Screenshots/UIImageType.png)
-![image](https://github.com/Chaya123/CompleteCoreDataDemo/blob/master/CompleteCoreDataDemo/Screenshots/UIImageClass.png)
-![image](https://github.com/Chaya123/CompleteCoreDataDemo/blob/master/CompleteCoreDataDemo/Screenshots/UIImageImplementation.png)
+![image](https://github.com/Chaya123/CompleteCoreDataDemo-transformable/blob/master/CompleteCoreDataDemo/Screenshots/UIImageType.png)
+![image](https://github.com/Chaya123/CompleteCoreDataDemo-transformable/blob/master/CompleteCoreDataDemo/Screenshots/UIImageClass.png)
+![image](https://github.com/Chaya123/CompleteCoreDataDemo-transformable/blob/master/CompleteCoreDataDemo/Screenshots/UIImageImplementation.png)
 
 
 4.对于我们自定义的类，要完成转化，必须要实现NSCoding协议，不然会崩溃，步骤如下
-![image](https://github.com/Chaya123/CompleteCoreDataDemo/blob/master/CompleteCoreDataDemo/Screenshots/ClassCoding.png)
-![image](https://github.com/Chaya123/CompleteCoreDataDemo/blob/master/CompleteCoreDataDemo/Screenshots/ClassImplement.png)
+![image](https://github.com/Chaya123/CompleteCoreDataDemo-transformable/blob/master/CompleteCoreDataDemo/Screenshots/ClassCoding.png)
+![image](https://github.com/Chaya123/CompleteCoreDataDemo-transformable/blob/master/CompleteCoreDataDemo/Screenshots/ClassImplement.png)
 
 如有疑问，可查看http://www.jianshu.com/p/8233a54b54fa文章详解
