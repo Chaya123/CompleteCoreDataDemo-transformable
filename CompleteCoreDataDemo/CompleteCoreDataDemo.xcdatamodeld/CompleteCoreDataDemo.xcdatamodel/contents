@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CommandClass" representedClassName="CommandClass" syncable="YES" codeGenerationType="class">
+        <attribute name="dealStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mermoryNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="processorNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="solidCapacity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useReason" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PersonClass" representedClassName="PersonClass" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="avater" optional="YES" attributeType="Transformable" valueTransformerName="UIImageTransToDataTransform" syncable="YES"/>
+        <attribute name="childClass" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="familyDict" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="vender" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CommandClass" positionX="-45" positionY="0" width="128" height="120"/>
+        <element name="PersonClass" positionX="-9" positionY="72" width="128" height="150"/>
+    </elements>
+</model>
